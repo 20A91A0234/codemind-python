@@ -1,15 +1,22 @@
-a=int(input())
-b=int(input())
-
-s=[]
-for i in range(a,b+1):
-    x=i
-    while x>0:
-        r=x%10
-        if r==0 or i%r!=0:
-            break
-        x=x//10
-    if x==0:
-        s.append(i)
-for i in range (0,len(s)):
-    print(s[i],end=" ")
+m=int(input())
+n=int(input())
+k=[]
+for i in range(m,n+1):
+    m=i
+    a=m
+    z=str(a)
+    l=len(z)
+    s=True
+    for j in range(1,l+1):
+        x=a%10
+        if x!=0:
+            if m%x!=0:
+                s=False
+        if x%10==0:
+            s=False
+        a=a//10
+    if s==True:
+        k=k+[i]
+print(*k)
+            
+            
