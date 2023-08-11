@@ -1,6 +1,6 @@
 m=int(input())
 n=int(input())
-k=[]
+list_a=[]
 for i in range(m,n+1):
     m=i
     a=m
@@ -16,7 +16,5 @@ for i in range(m,n+1):
             s=False
         a=a//10
     if s==True:
-        k=k+[i]
-print(*k)
-            
-            
+        list_a=list_a+[i]
+print(*list_a)
